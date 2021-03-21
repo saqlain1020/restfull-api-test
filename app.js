@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products')
 const orderRoutes = require('./api/routes/orders')
 
-mongoose.connect('mongodb://pas123:pass123@rest-test-api-shard-00-00.y8chx.mongodb.net:27017,rest-test-api-shard-00-01.y8chx.mongodb.net:27017,rest-test-api-shard-00-02.y8chx.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-vku26u-shard-0&authSource=admin&retryWrites=true&w=majority',{
+mongoose.connect(process.env.REACT_APP_MONGO_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

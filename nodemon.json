@@ -1,5 +1,6 @@
 {
     "env":{
-        "MONGO_ATLAS_PW": "pas123"
+        "MONGO_ATLAS_PW": "pas123",
+        "REACT_APP_MONGO_URI": "mongodb://pas123:pass123@rest-test-api-shard-00-00.y8chx.mongodb.net:27017,rest-test-api-shard-00-01.y8chx.mongodb.net:27017,rest-test-api-shard-00-02.y8chx.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-vku26u-shard-0&authSource=admin&retryWrites=true&w=majority"
     }
 }
